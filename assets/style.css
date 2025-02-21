@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "OrbitronRegular";
+    src: url(Orbitron-Regular.ttf);
+}
+@font-face {
+    font-family: MetalSentinelRegular;
+    src: url(metalsentinel.ttf);
+}
+.card.image-full:before {
+    position: relative;
+    content: "";
+    z-index: 10;
+    border-radius: 0;
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-n, oklch(var(--n) / var(--tw-bg-opacity)));
+    opacity: var(--darken-opacity, 0);
+}
+
+.card.image-full {
+    --darken-opacity: 0.5;
+}
+
+.card.image-full:hover {
+    --darken-opacity: 0.25;
+}
